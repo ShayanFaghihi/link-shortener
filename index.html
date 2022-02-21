@@ -11,27 +11,33 @@
 </head>
 <body>
 
-  <header hidden>
+  <header>
     <div class="container">
-      <a href="/"><img src="./images/logo.svg" alt="Shortly Logo"></a>
-    </div>
-    <div class="mobile-nav">
-      <a href="javascript:void(0)" class="nav-icon"><i class="fas fa-bars"></i></a>
-      <div class="nav mobile-nav__nav">
-        <ul class="mobile-nav__list">
-          <li class="mobile-nav__item"><a href="#features" class="mobile-nav__link">Features</a></li>
-          <li class="mobile-nav__item"><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
-          <li class="mobile-nav__item"><a href="#resources" class="mobile-nav__link">Resources</a></li>
-          <hr class="horizontal-line">
-          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Login</a></li>
-          <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Sign Up</a></li>
-        </ul>
-      </div>
-    </div>
+      <div class="wrapper">
+        <!-- Logo -->
+        <a href="/"><img src="./images/logo.svg" alt="Shortly Logo"></a>
+        <!-- Navigation -->
+        <div class="mobile-nav">
+          <a href="javascript:void(0)" class="nav-icon"><i class="fas fa-bars"></i></a>
+          <nav class="nav mobile-nav__nav" hidden>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item"><a href="#features" class="mobile-nav__link">Features</a></li>
+              <li class="mobile-nav__item"><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
+              <li class="mobile-nav__item"><a href="#resources" class="mobile-nav__link">Resources</a></li>
+              <hr class="horizontal-line">
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Login</a></li>
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link btn">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div> <!--End of mobile Nav-->
+      </div> <!--End of Wrapper-->
+    </div> <!--End of Container-->
+
   </header>
 
-  <main>
+  <main> <!--Main Tag-->
     <div class="container">
+      <!-- Hero Section -->
       <section class="hero">
         <img src="./images/illustration-working.svg" alt="Working Person">
         <div class="hero-text">
@@ -42,9 +48,14 @@
           <button class="btn">Get Shorted</button>
         </div>
       </section>
+      <!-- End of Hero Section -->
     </div>
   </main>
 
+
+  <footer>
+
+  </footer>
 
 <!-- 
   Features
