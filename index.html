@@ -36,20 +36,46 @@
   </header>
 
   <main> <!--Main Tag-->
-    <div class="container">
-      <!-- Hero Section -->
-      <section class="hero">
-        <img src="./images/illustration-working.svg" alt="Working Person">
-        <div class="hero-text">
-          <h1 class="title">More than just shorter links</h1>
-          <p class="hero-text__par">
-            Build your brand’s recognition and get detailed insights on how your links are performing.
-          </p>
-          <button class="btn">Get Shorted</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+          <img src="./images/illustration-working.svg" alt="Working Person">
+          <div class="hero-text">
+            <h1 class="title">More than just shorter links</h1>
+            <p class="hero-text__par">
+              Build your brand’s recognition and get detailed insights on how your links are performing.
+            </p>
+            <button class="btn">Get Shorted</button>
+          </div>
         </div>
       </section>
       <!-- End of Hero Section -->
-    </div>
+
+      <!-- Shorten Link Section -->
+      <section class="shortening">
+        <div class="container">
+          <div class="shorten-box">
+            <form>
+              <input type="text" name="url" id="url" required placeholder="Shorten a link here...">
+              <button class="btn" type="submit">Shorten It!</button>
+            </form>
+          </div> <!--end of shortening Box-->
+          <div class="shorten-results">
+            <div class="result-box">
+              <p class="submitted-url">https://www.frontendmentro.io</p>
+              <hr class="horizontal-line">
+              <p class="shorten-result">https://rel.ink/k4IKyk</p>
+              <a href="javascript:void(0)" class="btn">Copy</a>
+            </div>
+            <div class="result-box">
+              <p class="submitted-url">https://www.frontendmentro.io</p>
+              <hr class="horizontal-line">
+              <p class="shorten-result">https://rel.ink/k4IKyk</p>
+              <a href="javascript:void(0)" class="btn">Copy</a>
+            </div>
+          </div><!--End of shortening results-->
+        </div>
+      </section> <!--End of shortening Section-->
   </main>
 
 
