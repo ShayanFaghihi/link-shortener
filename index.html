@@ -21,9 +21,9 @@
           </svg>
         </a>
         <!-- Navigation -->
-        <div class="mobile-nav" hidden>
+        <div class="mobile-nav">
           <a href="javascript:void(0)" class="nav-icon"><i class="fas fa-bars"></i></a>
-          <nav class="nav mobile-nav__nav" hidden>
+          <nav class="nav mobile-nav__nav">
             <ul class="mobile-nav__list">
               <li class="mobile-nav__item"><a href="#features" class="mobile-nav__link">Features</a></li>
               <li class="mobile-nav__item"><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
@@ -74,24 +74,14 @@
         <div class="container">
           <div class="shorten-box">
             <form>
-              <input type="text" name="url" id="url" required placeholder="Shorten a link here...">
+              <input type="url" name="url" id="url" required placeholder="Shorten a link here..."
+                pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?"
+                title="http://website.com"
+              >
               <button class="btn" type="submit">Shorten It!</button>
             </form>
           </div> <!--end of shortening Box-->
-          <div class="shorten-results">
-            <div class="result-box">
-              <p class="submitted-url">https://www.frontendmentro.io</p>
-              <hr class="horizontal-line">
-              <p class="shorten-result">https://rel.ink/k4IKyk</p>
-              <a href="javascript:void(0)" class="btn">Copy</a>
-            </div>
-            <div class="result-box">
-              <p class="submitted-url">https://www.frontendmentro.io</p>
-              <hr class="horizontal-line">
-              <p class="shorten-result">https://rel.ink/k4IKyk</p>
-              <a href="javascript:void(0)" class="btn">Copy</a>
-            </div>
-          </div><!--End of shortening results-->
+          <div class="shorten-results"></div><!--End of shortening results-->
         </div>
       </section> <!--End of shortening Section-->
 
@@ -196,5 +186,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="script.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
